@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Recording and Reporting</string>
+    <string name="annex_3a">ANNEX 3A</string>
+    <string name="revised_national_tuberculosis_control_programme">REVISED NATIONAL TUBERCULOSIS CONTROL PROGRAMME</string>
+    <string name="laboratory_form_for_sputum_examination">Laboratory Form for Sputum Examination</string>
+    <string name="name_of_referring_health_facility">Name of Referring Health Facility:</string>
+    <string name="date">Date:</string>
+    <string name="name_of_patient">Name of Patient:</string>
+    <string name="age">Age:</string>
+    <string name="sex">Sex:</string>
+    <string name="m">M</string>
+    <string name="f">F</string>
+    <string name="complete_address">Complete Address:</string>
+    <string name="type_of_suspect_disease">Type of suspect/ disease:</string>
+    <string name="pulmonary">Pulmonary</string>
+    <string name="extra_pulmonary">Extra-Pulmonary</string>
+    <string name="site">Site:</string>
+    <string name="reason_for_examination">Reason for Examination:</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="repeat_examination_for_diagnosis">Repeat Examination for Diagnosis</string>
+    <string name="follow_up_of_anti_tb_treatment">Follow-up of anti-TB treatment</string>
+    <string name="patient_s_tb_no">Patient’s TB No</string>
+    <string name="name_and_signature_of_referring_person_official">(Name and signature of referring person/ official)</string>
+    <string name="if_sputum_sample_are_being_transported">If sputum sample are being transported:</string>
+    <string name="specimen_identification_no">Specimen identification No.:</string>
+    <string name="date_of_sputum_collection">Date of Sputum Collection</string>
+    <string name="specimen_collector_s_name_and_signature">Specimen Collector\'s name and signature:</string>
+    <string name="submit">Submit</string>
+</resources>

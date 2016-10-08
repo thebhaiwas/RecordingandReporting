@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">रिकॉर्डिंग और रिपोर्टिंग</string>
+    <string name="annex_3a">अनुबंध 3 ए</string>
+    <string name="revised_national_tuberculosis_control_programme">संशोधित राष्ट्रीय क्षयरोग नियंत्रण कार्यक्रम</string>
+    <string name="laboratory_form_for_sputum_examination">थूक परीक्षा के लिए प्रयोगशाला पर्चा</string>
+    <string name="name_of_referring_health_facility">जिक्र करते हुए स्वास्थ्य सुविधा के नाम:</string>
+    <string name="date">तारीख:</string>
+    <string name="name_of_patient">रोगी का नाम:</string>
+    <string name="age">आयु:</string>
+    <string name="sex">लिंग:</string>
+    <string name="m">पुरुष</string>
+    <string name="f">महिला</string>
+    <string name="complete_address">पूरा पता:</string>
+    <string name="type_of_suspect_disease">संदिग्ध / रोग के प्रकार:</string>
+    <string name="pulmonary">फेफड़े</string>
+    <string name="extra_pulmonary">अतिरिक्त पल्मोनरी</string>
+    <string name="site">साइट:</string>
+    <string name="reason_for_examination">परीक्षा के लिए कारण:</string>
+    <string name="diagnosis">निदान</string>
+    <string name="repeat_examination_for_diagnosis">निदान के लिए परीक्षा दोहराएँ</string>
+    <string name="follow_up_of_anti_tb_treatment">अनुवर्ती विरोधी टीबी के इलाज की</string>
+    <string name="patient_s_tb_no">रोगी टीबी संख्या</string>
+    <string name="name_and_signature_of_referring_person_official">(नाम और चर्चा करते हुए व्यक्ति / अधिकारी के हस्ताक्षर:</string>
+    <string name="if_sputum_sample_are_being_transported">यदि थूक का नमूना ले जाया जा रहा है:</string>
+    <string name="specimen_identification_no">नमूना पहचान संख्या:</string>
+    <string name="date_of_sputum_collection">थूक संग्रह की तिथि</string>
+    <string name="specimen_collector_s_name_and_signature">नमूना कलेक्टर के नाम और हस्ताक्षर:</string>
+    <string name="submit">जमा करें</string>
+</resources>
