@@ -62,7 +62,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/etNameRHF"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -80,7 +81,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:id="@+id/etDate"/>
 
             </LinearLayout>
 
@@ -99,7 +101,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:id="@+id/etNamePatient"/>
 
             </LinearLayout>
 
@@ -118,7 +121,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+                    android:id="@+id/etAge"/>
 
             </LinearLayout>
 
@@ -145,14 +149,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/m"
-                        android:textColor="@android:color/tab_indicator_text"/>
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:id="@+id/rbM"/>
 
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/f"
-                        android:textColor="@android:color/tab_indicator_text"/>
+                        android:textColor="@android:color/tab_indicator_text"
+                        android:id="@+id/rbF"/>
 
                 </RadioGroup>
 
@@ -167,7 +173,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/etAddress"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -180,14 +187,16 @@
                 android:layout_height="wrap_content"
                 android:text="@string/pulmonary"
                 android:textSize="20sp"
-                android:textColor="@android:color/tab_indicator_text"/>
+                android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/cbPulmonary"/>
 
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/extra_pulmonary"
                 android:textSize="20sp"
-                android:textColor="@android:color/tab_indicator_text"/>
+                android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/cbEPulmonary"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -205,7 +214,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:id="@+id/etSite"/>
 
             </LinearLayout>
 
@@ -220,21 +230,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/diagnosis"
                 android:textSize="20sp"
-                android:textColor="@android:color/tab_indicator_text"/>
+                android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/cbDiagnosis"/>
 
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/repeat_examination_for_diagnosis"
                 android:textSize="20sp"
-                android:textColor="@android:color/tab_indicator_text"/>
+                android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/cbRepeat"/>
 
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/follow_up_of_anti_tb_treatment"
                 android:textSize="20sp"
-                android:textColor="@android:color/tab_indicator_text"/>
+                android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/cbFollowUp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -252,7 +265,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:id="@+id/etPTN"/>
 
             </LinearLayout>
 
@@ -265,7 +279,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/etNameOfficial"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -282,7 +297,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/etSIN"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -294,7 +310,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:inputType="date"/>
+                android:id="@+id/etDateSputum"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -305,7 +321,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/etNameCollector"/>
 
             <!--
 
@@ -435,7 +452,8 @@ the examination."/>
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/submit"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/btnSubmit1"/>
 
         </LinearLayout>
 
