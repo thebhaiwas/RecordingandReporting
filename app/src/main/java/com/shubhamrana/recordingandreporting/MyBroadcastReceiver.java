@@ -16,6 +16,7 @@ import com.android.volley.toolbox.StringRequest;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
 
@@ -53,8 +54,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
                     StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-
-                            dbHandler.mark("Annex3A", response);
+                            Scanner sc = new Scanner(response);
+                            dbHandler.mark("Annex3A", sc.next());
                         }
                     }, new Response.ErrorListener() {
                         @Override
