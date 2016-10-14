@@ -2,18 +2,21 @@ package com.shubhamrana.recordingandreporting;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class DBHandler  extends SQLiteOpenHelper{
 
     private Context context;
 
-    private static final int VERSION = 1;
+    private static final int VERSION = 5;
     private static final String DATABASE = "MyDB";
 
-    private static final String TABLEA = "ANNEXA";
+    private static final String TABLEA = "Annex3A";
     private static final String COL0A = "Id";
     private static final String COL1A = "NameRHF";
     private static final String COL2A = "Date";
@@ -42,8 +45,20 @@ public class DBHandler  extends SQLiteOpenHelper{
         String query =  "CREATE TABLE "+TABLEA+
                 " ( "+
                 COL0A+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
-                COL1A+" TEXT NOT NULL, "+
-                COL2A+" TEXT NOT NULL "+
+                COL1A+" TEXT, "+
+                COL2A+" TEXT, "+
+                COL3A+" TEXT, "+
+                COL4A+" TEXT, "+
+                COL5A+" TEXT, "+
+                COL6A+" TEXT, "+
+                COL7A+" TEXT, "+
+                COL8A+" TEXT, "+
+                COL9A+" TEXT, "+
+                COL10A+" TEXT, "+
+                COL11A+" TEXT, "+
+                COL12A+" TEXT, "+
+                COL13A+" TEXT, "+
+                COL14A+" TEXT "+
                 " );";
         db.execSQL(query);
     }
@@ -56,12 +71,44 @@ public class DBHandler  extends SQLiteOpenHelper{
     }
 
     public boolean addRowA(ContentValues cv) {
-        SQLiteDatabase db = getWritableDatabase();
-        db.insert(TABLEA, null, cv);
-        db.close();
 
-        Toast.makeText(context, "Record submitted successfully", Toast.LENGTH_SHORT).show();
+        long status = -1;
 
-        return true;
+        try {
+            SQLiteDatabase db = getWritableDatabase();
+            status = db.insert(TABLEA, null, cv);
+            db.close();
+        } catch (Exception e) {
+            Toast.makeText(context, e.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if(status != -1)
+            return true;
+        else
+            return false;
+    }
+
+    public ArrayList<String> showTable(String tableName) {
+
+        ArrayList<String> rows = new ArrayList<>();
+
+        if(tableName.equals(TABLEA)) {
+            Toast.makeText(context, tableName, Toast.LENGTH_SHORT).show();
+            SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+            Cursor cr = sqLiteDatabase.query(tableName, COLSA, null, null, null , null,
+                    null);
+            for(cr.moveToFirst();!cr.isAfterLast();cr.moveToNext()) {
+                StringBuilder sb = new StringBuilder("");
+                sb.append(cr.getString(cr.getColumnIndex(COL0A)));
+                sb.append(" ");
+                sb.append(cr.getString(cr.getColumnIndex(COL3A)));
+                rows.add(sb.toString());
+            }
+            sqLiteDatabase.close();
+        } else {
+            Toast.makeText(context, "Table not found", Toast.LENGTH_SHORT).show();
+        }
+
+        return rows;
     }
 }
