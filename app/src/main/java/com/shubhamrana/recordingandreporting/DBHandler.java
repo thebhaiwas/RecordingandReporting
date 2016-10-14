@@ -95,16 +95,15 @@ public class DBHandler  extends SQLiteOpenHelper{
             SQLiteDatabase sqLiteDatabase = getWritableDatabase();
             Cursor cr = sqLiteDatabase.query(tableName, COLSA, null, null, null, null,
                     null);
-            sqLiteDatabase.close();
             return cr;
         }
 
         return null;
     }
 
-    public void mark(String tableName, Long id) {
+    public void mark(String tableName, String id) {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-        sqLiteDatabase.delete(tableName, "Id = ?", null);
+        sqLiteDatabase.delete(tableName, "Id = "+id, null);
         sqLiteDatabase.close();
     }
 
