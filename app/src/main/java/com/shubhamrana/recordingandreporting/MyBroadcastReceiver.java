@@ -3,8 +3,18 @@ package com.shubhamrana.recordingandreporting;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
 
@@ -12,7 +22,54 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+
         this.context = context;
+        String url = "";
+
+        if(isOnline()) {
+
+            final DBHandler dbHandler = new DBHandler(context, null, null, 0);
+            Cursor cr = dbHandler.getCursor("Annex3A");
+            final Map<String, String> map = new HashMap<>();
+            for (cr.moveToFirst(); !cr.isAfterLast(); cr.moveToNext()) {
+                map.put(DBHandler.COLSA[0], "" + cr.getLong(cr.getColumnIndex(DBHandler.COLSA[0])));
+                map.put(DBHandler.COLSA[1], cr.getString(cr.getColumnIndex(DBHandler.COLSA[1])));
+                map.put(DBHandler.COLSA[2], cr.getString(cr.getColumnIndex(DBHandler.COLSA[2])));
+                map.put(DBHandler.COLSA[3], cr.getString(cr.getColumnIndex(DBHandler.COLSA[3])));
+                map.put(DBHandler.COLSA[4], cr.getString(cr.getColumnIndex(DBHandler.COLSA[4])));
+                map.put(DBHandler.COLSA[5], cr.getString(cr.getColumnIndex(DBHandler.COLSA[5])));
+                map.put(DBHandler.COLSA[6], cr.getString(cr.getColumnIndex(DBHandler.COLSA[6])));
+                map.put(DBHandler.COLSA[7], cr.getString(cr.getColumnIndex(DBHandler.COLSA[7])));
+                map.put(DBHandler.COLSA[8], cr.getString(cr.getColumnIndex(DBHandler.COLSA[8])));
+                map.put(DBHandler.COLSA[9], cr.getString(cr.getColumnIndex(DBHandler.COLSA[9])));
+                map.put(DBHandler.COLSA[10], cr.getString(cr.getColumnIndex(DBHandler.COLSA[10])));
+                map.put(DBHandler.COLSA[11], cr.getString(cr.getColumnIndex(DBHandler.COLSA[11])));
+                map.put(DBHandler.COLSA[12], cr.getString(cr.getColumnIndex(DBHandler.COLSA[12])));
+                map.put(DBHandler.COLSA[13], cr.getString(cr.getColumnIndex(DBHandler.COLSA[13])));
+                map.put(DBHandler.COLSA[14], cr.getString(cr.getColumnIndex(DBHandler.COLSA[14])));
+
+                StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        dbHandler.mark("Annex3A", Long.parseLong(response));
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }){
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError {
+                        return map;
+                    }
+                };
+                if(isOnline())
+                    MySingleton.getInstance(context).addToRequestQueue(request);
+                else return;
+            }
+        }
     }
 
     public boolean isOnline() {

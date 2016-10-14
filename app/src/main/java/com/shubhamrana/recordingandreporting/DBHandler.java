@@ -88,6 +88,26 @@ public class DBHandler  extends SQLiteOpenHelper{
             return false;
     }
 
+    public Cursor getCursor(String tableName) {
+
+        if(tableName.equals(TABLEA)) {
+
+            SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+            Cursor cr = sqLiteDatabase.query(tableName, COLSA, null, null, null, null,
+                    null);
+            sqLiteDatabase.close();
+            return cr;
+        }
+
+        return null;
+    }
+
+    public void mark(String tableName, Long id) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        sqLiteDatabase.delete(tableName, "Id = ?", null);
+        sqLiteDatabase.close();
+    }
+
     public ArrayList<String> showTable(String tableName) {
 
         ArrayList<String> rows = new ArrayList<>();
