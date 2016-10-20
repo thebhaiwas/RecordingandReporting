@@ -34,7 +34,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/revised_national_tuberculosis_control_programme"
+                android:text="REVISED NATIONAL TUBERCULOSIS CONTROL PROGRAMME"
                 android:textSize="30sp"
                 android:gravity="center"/>
 
