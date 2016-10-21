@@ -36,6 +36,8 @@
         </activity>
         <activity android:name=".Records">
         </activity>
+        <activity android:name=".Annex3B">
+        </activity>
     </application>
 
 </manifest>
