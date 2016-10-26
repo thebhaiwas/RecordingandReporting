@@ -16,13 +16,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ANNEX 3B"
+                android:text="@string/annex_3b"
                 android:gravity="end"
                 android:textSize="15sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Form A"
+                android:text="@string/form_a"
                 android:gravity="left"
                 android:textSize="15sp"/>
             <TextView
@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Referral for treatment form"
+                android:text="@string/referral_for_treatment_form"
                 android:textSize="25sp"
                 android:gravity="center"/>
             <TextView
@@ -49,8 +49,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(Fill in triplicate. send one to the respective DTO receiving the patient [Form A], send one copy to the
-health facility where the patient is referred to [Form B], and give one copy to the patient [Form C]) "
+                android:text="@string/fill_in_triplicate_send_one_to_the_respective_dto_receiving_the_patient_form_a_send_one_copy_to_the_health_facility_where_the_patient_is_referred_to_form_b_and_give_one_copy_to_the_patient_form_c"
                 android:textSize="15sp"
                 android:gravity="center"/>
             <TextView
@@ -59,7 +58,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name and address of referring health facility"
+                android:text="@string/name_and_address_of_referring_health_facility"
                 android:textSize="17sp"/>
 
             <EditText
@@ -73,7 +72,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name of health facility to which patient is referred "
+                android:text="@string/name_of_health_facility_to_which_patient_is_referred"
                 android:textSize="17sp"/>
 
             <EditText
@@ -109,7 +108,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nameof Patient"
+                    android:text="Name of Patient"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -199,7 +198,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Disease Classification"
+                android:text="@string/disease_classification"
                 android:textSize="20sp"/>
             <RadioGroup
                 android:layout_width="match_parent"
@@ -237,7 +236,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Category of Treatment"
+                android:text="@string/category_of_treatment"
                 android:textSize="20sp"/>
             <RadioGroup
                 android:layout_width="match_parent"
@@ -249,14 +248,14 @@ health facility where the patient is referred to [Form B], and give one copy to 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Category1"
+                    android:text="@string/category1"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/cat1"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Category2"
+                    android:text="@string/category2"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/cat2"/>
 
@@ -264,7 +263,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Category3"
+                    android:text="@string/category3"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/cat3"/>
 
@@ -275,7 +274,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Type of Patient"
+                android:text="@string/type_of_patient"
                 android:textSize="20sp"/>
             <RadioGroup
                 android:layout_width="match_parent"
@@ -287,14 +286,14 @@ health facility where the patient is referred to [Form B], and give one copy to 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="New"
+                    android:text="@string/new"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/New"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Relapse"
+                    android:text="@string/relapse"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/Rel"/>
 
@@ -302,21 +301,21 @@ health facility where the patient is referred to [Form B], and give one copy to 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Failure"
+                    android:text="@string/failure"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/Fail"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Treatment after default"
+                    android:text="@string/treatment_after_default"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/TaD"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Other(specify)"
+                    android:text="@string/other_specify"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/other"/>
 
@@ -324,7 +323,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remarks"
+                android:text="@string/remarks"
                 android:textSize="20sp"/>
 
             <TextView
@@ -337,7 +336,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Signature"
+                    android:text="@string/signature"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -354,7 +353,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Date Referred"
+                    android:text="@string/date_referred"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -371,7 +370,7 @@ health facility where the patient is referred to [Form B], and give one copy to 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Designation"
+                    android:text="@string/designation"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 

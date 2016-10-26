@@ -26,4 +26,26 @@
     <string name="date_of_sputum_collection">Date of Sputum Collection</string>
     <string name="specimen_collector_s_name_and_signature">Specimen Collector\'s name and signature:</string>
     <string name="submit">Submit</string>
+    <string name="annex_3b">ANNEX 3B</string>
+    <string name="form_a">Form A</string>
+    <string name="referral_for_treatment_form">Referral for treatment form</string>
+    <string name="fill_in_triplicate_send_one_to_the_respective_dto_receiving_the_patient_form_a_send_one_copy_to_the_health_facility_where_the_patient_is_referred_to_form_b_and_give_one_copy_to_the_patient_form_c">(Fill in triplicate. send one to the respective DTO receiving the patient [Form A], send one copy to the health facility where the patient is referred to [Form B], and give one copy to the patient [Form C])</string>
+    <string name="name_and_address_of_referring_health_facility">Name and address of referring health facility</string>
+    <string name="name_of_health_facility_to_which_patient_is_referred">Name of health facility to which patient is referred</string>
+    <string name="nameof_patient">Nameof Patient</string>
+    <string name="disease_classification">Disease Classification</string>
+    <string name="category_of_treatment">Category of Treatment</string>
+    <string name="category1">Category1</string>
+    <string name="category2">Category2</string>
+    <string name="category3">Category3</string>
+    <string name="type_of_patient">Type of Patient</string>
+    <string name="new">New</string>
+    <string name="relapse">Relapse</string>
+    <string name="failure">Failure</string>
+    <string name="treatment_after_default">Treatment after default</string>
+    <string name="other_specify">Other(specify)</string>
+    <string name="remarks">Remarks</string>
+    <string name="signature">Signature</string>
+    <string name="date_referred">Date Referred</string>
+    <string name="designation">Designation</string>
 </resources>
