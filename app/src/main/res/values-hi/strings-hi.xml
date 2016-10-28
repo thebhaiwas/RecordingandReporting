@@ -56,4 +56,6 @@
     <string name="_pulmonary">फेफड़े</string>
     <string name="_extra_pulmonary">अतिरिक्त फेफड़े</string>
     <string name="_site">साइट</string>
+    <string name="referral_for_treatment_form">उपचार के फार्म के लिए रेफरल</string>
+    <string name="_revised_national_tuberculosis_control_programme">संशोधित राष्ट्रीय क्षय रोग नियंत्रण कार्यक्रम</string>
 </resources>
