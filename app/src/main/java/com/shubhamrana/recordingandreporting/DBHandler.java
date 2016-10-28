@@ -13,7 +13,7 @@ public class DBHandler  extends SQLiteOpenHelper{
 
     private Context context;
 
-    private static final int VERSION = 7;
+    private static final int VERSION = 8;
     private static final String DATABASE = "MyDB";
 
     private static final String TABLEA = "Annex3A";
@@ -77,7 +77,6 @@ public class DBHandler  extends SQLiteOpenHelper{
                 COL13A+" TEXT, "+
                 COL14A+" TEXT "+
                 " );";
-        db.execSQL(query);
         String query2 =  "CREATE TABLE "+TABLEB+
                 " ( "+
                 COL0B+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
@@ -95,6 +94,7 @@ public class DBHandler  extends SQLiteOpenHelper{
                 COL12B+" TEXT, "+
                 COL13B+" TEXT, "+
                 " );";
+        db.execSQL(query);
         db.execSQL(query2);
     }
 

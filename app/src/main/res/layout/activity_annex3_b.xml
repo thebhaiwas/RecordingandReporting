@@ -88,7 +88,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Date"
+                    android:text="@string/_date"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -108,7 +108,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Name of Patient"
+                    android:text="@string/_name_of_patient"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -128,7 +128,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="age"
+                    android:text="@string/_age"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -149,7 +149,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="sex"
+                    android:text="@string/_sex"
                     android:textSize="20sp"
                     android:layout_weight="1"/>
 
@@ -163,7 +163,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="m"
+                        android:text="@string/_m"
                         android:textColor="@android:color/tab_indicator_text"
                         android:id="@+id/rbM1"/>
 
@@ -171,7 +171,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="f"
+                        android:text="@string/_f"
                         android:textColor="@android:color/tab_indicator_text"
                         android:id="@+id/rbF1"/>
 
@@ -184,7 +184,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Complete Address"
+                android:text="@string/_complete_address"
                 android:textSize="17sp"/>
 
             <EditText
@@ -210,14 +210,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pulmonary"
+                    android:text="@string/_pulmonary"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/Pul1"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Extra-Pulmonary"
+                    android:text="@string/_extra_pulmonary"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/Extra_pul1"/>
 
@@ -225,7 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Site"
+                    android:text="@string/_site"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/rbSite"/>
 
@@ -286,7 +286,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="New"
+                    android:text="@string/_new_"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/New"/>
                 <RadioButton
