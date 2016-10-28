@@ -48,4 +48,15 @@
     <string name="signature">Signature</string>
     <string name="date_referred">Date Referred</string>
     <string name="designation">Designation</string>
+    <string name="_date">Date</string>
+    <string name="_name_of_patient">Name of Patient</string>
+    <string name="_age">age</string>
+    <string name="_sex">sex</string>
+    <string name="_m">m</string>
+    <string name="_f">f</string>
+    <string name="_complete_address">Complete Address</string>
+    <string name="_pulmonary">Pulmonary</string>
+    <string name="_extra_pulmonary">Extra-Pulmonary</string>
+    <string name="_site">Site</string>
+    <string name="_new_">New</string>
 </resources>

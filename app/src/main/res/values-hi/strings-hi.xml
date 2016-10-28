@@ -27,6 +27,7 @@
     <string name="specimen_collector_s_name_and_signature">नमूना कलेक्टर के नाम और हस्ताक्षर:</string>
     <string name="submit">जमा करें</string>
     <string name="form_a">फॉर्म ए </string>
+    <string name="annex_3b">अनुलग्नक 3 बी</string>
     <string name="fill_in_triplicate_send_one_to_the_respective_dto_receiving_the_patient_form_a_send_one_copy_to_the_health_facility_where_the_patient_is_referred_to_form_b_and_give_one_copy_to_the_patient_form_c">तीन प्रतियों में भरने के मरीज को एक संदेश स्वास्थ्य सुविधा जहां मरीज बी फार्म और रोगी प्रपत्र ग के लिए एक प्रति देने के लिए जाना जाता है के लिए एक कॉपी के रूप में प्राप्त करने के लिए संबंधित के लिए एक भेज</string>
     <string name="name_and_address_of_referring_health_facility">नाम और चर्चा करते हुए स्वास्थ्य सुविधा का पता</string>
     <string name="name_of_health_facility_to_which_patient_is_referred">स्वास्थ्य सुविधा के नाम पर जो करने के लिए जाना जाता है मरीज</string>
@@ -45,5 +46,14 @@
     <string name="signature">हस्ताक्षर</string>
     <string name="date_referred">तिथि में भेजा</string>
     <string name="designation">पद</string>
-
+    <string name="_date">तारीख</string>
+    <string name="_name_of_patient">रोगी का नाम</string>
+    <string name="_age">आयु</string>
+    <string name="_sex">लिंग</string>
+    <string name="_m">पुस्र्ष</string>
+    <string name="_f">महिला</string>
+    <string name="_complete_address">पूरा पता</string>
+    <string name="_pulmonary">फेफड़े</string>
+    <string name="_extra_pulmonary">अतिरिक्त फेफड़े</string>
+    <string name="_site">साइट</string>
 </resources>

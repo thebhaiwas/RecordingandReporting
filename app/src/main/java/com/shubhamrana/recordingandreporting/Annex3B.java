@@ -65,6 +65,7 @@ public class Annex3B extends AppCompatActivity implements View.OnClickListener {
         etDateReferred= (EditText) findViewById(R.id.date_referred);
         etDesignation= (EditText) findViewById(R.id.Designation);
         btnsubmit= (Button) findViewById(R.id.btnSubmit2);
+        btnsubmit.setOnClickListener(this);
         dbHandler = new DBHandler(this, null, null, 0);
 
     }
