@@ -45,5 +45,5 @@
     <string name="signature">हस्ताक्षर</string>
     <string name="date_referred">तिथि में भेजा</string>
     <string name="designation">पद</string>
-
+    <string name="something">something</string>
 </resources>

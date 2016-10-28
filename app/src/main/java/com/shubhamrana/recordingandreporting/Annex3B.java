@@ -8,6 +8,6 @@ public class Annex3B extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.annex_3b);
+        setContentView(R.layout.activity_annex3_b);
     }
 }
