@@ -92,7 +92,7 @@ public class DBHandler  extends SQLiteOpenHelper{
                 COL10B+" TEXT, "+
                 COL11B+" TEXT, "+
                 COL12B+" TEXT, "+
-                COL13B+" TEXT, "+
+                COL13B+" TEXT "+
                 " );";
         db.execSQL(query);
         db.execSQL(query2);
