@@ -15,7 +15,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener,
         AdapterView.OnItemSelectedListener {
 
-    private String listItems[] = {"Admin", "Annex 3A"};
+    private String listItems[] = {"Admin", "Annex 3A","Annex 3B"};
     private String languages[] = {"English", "Hindi"};
     private int lastLanguage = 0;
 

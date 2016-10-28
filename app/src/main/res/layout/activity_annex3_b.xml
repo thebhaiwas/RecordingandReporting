@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:layout_weight="1"
-                    android:id="@+id/etDate"/>
+                    android:id="@+id/etDate1"/>
 
             </LinearLayout>
 
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:layout_weight="1"
-                    android:id="@+id/etNamePatient"/>
+                    android:id="@+id/etNamePatient1"/>
 
             </LinearLayout>
 
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="20sp"
-                    android:id="@+id/etAge"/>
+                    android:id="@+id/etAge1"/>
 
             </LinearLayout>
 
@@ -165,7 +165,7 @@
                         android:layout_weight="1"
                         android:text="m"
                         android:textColor="@android:color/tab_indicator_text"
-                        android:id="@+id/rbM"/>
+                        android:id="@+id/rbM1"/>
 
                     <RadioButton
                         android:layout_width="match_parent"
@@ -173,7 +173,7 @@
                         android:layout_weight="1"
                         android:text="f"
                         android:textColor="@android:color/tab_indicator_text"
-                        android:id="@+id/rbF"/>
+                        android:id="@+id/rbF1"/>
 
                 </RadioGroup>
 
@@ -191,7 +191,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:id="@+id/complete_address"/>
+                android:id="@+id/complete_address1"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="10dp"/>
@@ -212,14 +212,14 @@
                     android:layout_weight="1"
                     android:text="Pulmonary"
                     android:textColor="@android:color/tab_indicator_text"
-                    android:id="@+id/Pul"/>
+                    android:id="@+id/Pul1"/>
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Extra-Pulmonary"
                     android:textColor="@android:color/tab_indicator_text"
-                    android:id="@+id/Extra_pul"/>
+                    android:id="@+id/Extra_pul1"/>
 
                 <RadioButton
                     android:layout_width="match_parent"
@@ -227,7 +227,7 @@
                     android:layout_weight="1"
                     android:text="Site"
                     android:textColor="@android:color/tab_indicator_text"
-                    android:id="@+id/etSite"/>
+                    android:id="@+id/rbSite"/>
 
             </RadioGroup>
             <TextView
@@ -286,7 +286,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/new"
+                    android:text="New"
                     android:textColor="@android:color/tab_indicator_text"
                     android:id="@+id/New"/>
                 <RadioButton
@@ -382,6 +382,12 @@
                     android:id="@+id/Designation"/>
 
             </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textSize="20sp"
+                android:id="@+id/btnSubmit2"/>
 
         </LinearLayout>
     </ScrollView>
