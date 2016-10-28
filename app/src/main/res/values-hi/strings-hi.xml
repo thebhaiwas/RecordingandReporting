@@ -36,7 +36,7 @@
     <string name="category2">श्रेणी 2</string>
     <string name="category3">श्रेणी 3</string>
     <string name="type_of_patient">रोगी के प्रकार</string>
-    <string name="new">नया</string>
+    <string name="_new">नया</string>
     <string name="relapse">पलटा</string>
     <string name="failure">असफलता</string>
     <string name="treatment_after_default">डिफ़ॉल्ट के बाद उपचार</string>

@@ -39,7 +39,7 @@
     <string name="category2">Category2</string>
     <string name="category3">Category3</string>
     <string name="type_of_patient">Type of Patient</string>
-    <string name="new">New</string>
+    <string name="_new">New</string>
     <string name="relapse">Relapse</string>
     <string name="failure">Failure</string>
     <string name="treatment_after_default">Treatment after default</string>
@@ -48,5 +48,4 @@
     <string name="signature">Signature</string>
     <string name="date_referred">Date Referred</string>
     <string name="designation">Designation</string>
-    <string name="new">New</string>
 </resources>
