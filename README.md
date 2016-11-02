@@ -6,6 +6,6 @@
 # Members:
   Shubham Rana
   Vikash Kumar
-  Sujeet Rajvats
+  Sujeet Raj Vats
   Abhijeet Anand
 # National Institute of Technology Patna
