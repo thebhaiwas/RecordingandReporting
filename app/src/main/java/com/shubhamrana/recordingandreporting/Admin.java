@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class Admin extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private ListView listView;
-    private String tables[] = {"Annex3A"};
+    private String tables[] = {"Annex3A","Annex3B"};
     //test comment
     @Override
     protected void onCreate(Bundle savedInstanceState) {

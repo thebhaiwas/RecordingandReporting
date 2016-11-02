@@ -81,20 +81,20 @@ public class Annex3B extends AppCompatActivity implements View.OnClickListener {
     private void submitData2()
     {
         try {
-            ContentValues cv=new ContentValues();
-            cv.put(DBHandler.COLSB[1], etNARHF.getText().toString());
-            cv.put(DBHandler.COLSB[2], etNHFWPER.getText().toString());
-            cv.put(DBHandler.COLSB[3], etDate.getText().toString());
-            cv.put(DBHandler.COLSB[4], etNameofPatient.getText().toString());
-            cv.put(DBHandler.COLSB[5], etAge.getText().toString());
+            ContentValues cv1=new ContentValues();
+            cv1.put(DBHandler.COLSB[1], etNARHF.getText().toString());
+            cv1.put(DBHandler.COLSB[2], etNHFWPER.getText().toString());
+            cv1.put(DBHandler.COLSB[3], etDate.getText().toString());
+            cv1.put(DBHandler.COLSB[4], etNameofPatient.getText().toString());
+            cv1.put(DBHandler.COLSB[5], etAge.getText().toString());
             String sex;
             if (rbM.isSelected())
                 sex = "M";
             else if (rbF.isSelected())
                 sex = "F";
             else sex = "";
-            cv.put(DBHandler.COLSA[6], sex);
-            cv.put(DBHandler.COLSA[7], etAddress.getText().toString());
+            cv1.put(DBHandler.COLSB[6], sex);
+            cv1.put(DBHandler.COLSB[7], etAddress.getText().toString());
             String disease_classification;
             if(rbPulmonary.isSelected())
                 disease_classification="Pulmonary";
@@ -104,7 +104,7 @@ public class Annex3B extends AppCompatActivity implements View.OnClickListener {
                 disease_classification="Site";
             else
                 disease_classification="";
-            cv.put(DBHandler.COLSB[8],disease_classification);
+            cv1.put(DBHandler.COLSB[8],disease_classification);
             String category;
             if(rbCategory.isSelected())
                 category="category1";
@@ -114,7 +114,7 @@ public class Annex3B extends AppCompatActivity implements View.OnClickListener {
                 category="category3";
             else
                 category="";
-            cv.put(DBHandler.COLSB[9],category);
+            cv1.put(DBHandler.COLSB[9],category);
             String type_of_patient;
             if(rbnew.isSelected())
                 type_of_patient="New";
@@ -128,11 +128,11 @@ public class Annex3B extends AppCompatActivity implements View.OnClickListener {
                 type_of_patient="Others";
             else
                 type_of_patient="";
-            cv.put(DBHandler.COLSB[10],type_of_patient);
-            cv.put(DBHandler.COLSB[11],etSignature.getText().toString());
-            cv.put(DBHandler.COLSB[12],etDateReferred.getText().toString());
-            cv.put(DBHandler.COLSB[13],etDesignation.getText().toString());
-            if (dbHandler.addRowB(cv))
+            cv1.put(DBHandler.COLSB[10],type_of_patient);
+            cv1.put(DBHandler.COLSB[11],etSignature.getText().toString());
+            cv1.put(DBHandler.COLSB[12],etDateReferred.getText().toString());
+            cv1.put(DBHandler.COLSB[13],etDesignation.getText().toString());
+            if (dbHandler.addRowB(cv1))
                 Toast.makeText(this, "Record submitted successfully", Toast.LENGTH_SHORT).show();
             else
                 Toast.makeText(this, "Error inserting row", Toast.LENGTH_SHORT).show();

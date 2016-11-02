@@ -13,7 +13,7 @@ public class DBHandler  extends SQLiteOpenHelper{
 
     private Context context;
 
-    private static final int VERSION = 8;
+    private static final int VERSION = 11;
     private static final String DATABASE = "MyDB";
 
     private static final String TABLEA = "Annex3A";
@@ -77,6 +77,7 @@ public class DBHandler  extends SQLiteOpenHelper{
                 COL13A+" TEXT, "+
                 COL14A+" TEXT "+
                 " );";
+        db.execSQL(query);
         String query2 =  "CREATE TABLE "+TABLEB+
                 " ( "+
                 COL0B+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
@@ -94,7 +95,6 @@ public class DBHandler  extends SQLiteOpenHelper{
                 COL12B+" TEXT, "+
                 COL13B+" TEXT "+
                 " );";
-        db.execSQL(query);
         db.execSQL(query2);
     }
 
@@ -124,13 +124,13 @@ public class DBHandler  extends SQLiteOpenHelper{
         else
             return false;
     }
-    public boolean addRowB(ContentValues cv) {
+    public boolean addRowB(ContentValues cv1) {
 
         long status = -1;
 
         try {
             SQLiteDatabase db = getWritableDatabase();
-            status = db.insert(TABLEB, null, cv);
+            status = db.insert(TABLEB, null, cv1);
             db.close();
         } catch (Exception e) {
             Toast.makeText(context, e.toString(), Toast.LENGTH_SHORT).show();
@@ -144,19 +144,19 @@ public class DBHandler  extends SQLiteOpenHelper{
 
     public Cursor getCursor(String tableName) {
 
-        if(tableName.equals(TABLEA)) {
+        if(tableName.equals(TABLEB)) {
+
+            SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+            Cursor cr = sqLiteDatabase.query(tableName, COLSB, null, null, null, null,
+                    null);
+            return cr;
+        }
+        else if(tableName.equals(TABLEA)) {
 
             SQLiteDatabase sqLiteDatabase = getWritableDatabase();
             Cursor cr = sqLiteDatabase.query(tableName, COLSA, null, null, null, null,
                     null);
             return cr;
-        }
-        else if(tableName.equals(TABLEB)) {
-
-                SQLiteDatabase sqLiteDatabase = getWritableDatabase();
-                Cursor cr = sqLiteDatabase.query(tableName, COLSB, null, null, null, null,
-                        null);
-                return cr;
         }
         return null;
     }
@@ -192,7 +192,7 @@ public class DBHandler  extends SQLiteOpenHelper{
                         null);
                 for(cr.moveToFirst();!cr.isAfterLast();cr.moveToNext()) {
                     StringBuilder sb = new StringBuilder("");
-                    sb.append(cr.getString(cr.getColumnIndex(COL0B)));
+                    sb.append(cr.getString(cr.getColumnIndex(COL1B)));
                     sb.append(" ");
                     sb.append(cr.getString(cr.getColumnIndex(COL3B)));
                     rows.add(sb.toString());
